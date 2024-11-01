@@ -1,6 +1,6 @@
 # WHOIS Lookup Tool
 
-A C# tool for bulk WHOIS lookups, with output formatted in a clean, full-page HTML report.
+A Python tool for bulk WHOIS lookups, with output formatted in a clean, full-page HTML report.
 
 ## Overview
 
@@ -22,11 +22,19 @@ Clone this repository and install the required dependencies.
 ```bash
 git clone https://github.com/yourusername/whois-lookup-tool.git
 cd whois-lookup-tool
+pip install -r requirements.txt
 ```
 
 Dependencies:
 
-This C# script relies on the .NET Framework (version 4.7.2 or above) and `System.Net` for WHOIS queries. If you need to handle WHOIS parsing for specific domains, additional parsing logic may be required.
+- `python-whois`
+- `pandas`
+
+Or install directly:
+
+```bash
+pip install python-whois pandas
+```
 
 ---
 
@@ -40,10 +48,10 @@ This C# script relies on the .NET Framework (version 4.7.2 or above) and `System
    https://github.com
    ```
 
-2. Run the C# program. This can be done from the command line or in Visual Studio.
+2. Run the Python script:
 
    ```bash
-   dotnet run
+   python whois_bulk_lookup.py
    ```
 
 3. When prompted, enter the path to your text file (e.g., `domains.txt`):
@@ -61,8 +69,6 @@ The HTML report includes:
 - **Domain Details**: Registrar, creation date, expiration date, last updated, status, and name servers.
 - **Registrant Information**: Country, state, city, registrant, and emails (when available).
 - **SHA-256 Hash**: A hash at the top for result verification.
-
----
 
 
 ## License
