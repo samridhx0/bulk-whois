@@ -1,22 +1,29 @@
-WHOIS Lookup Tool
+# WHOIS Lookup Tool
+
 A Python tool for bulk WHOIS lookups, with output formatted in a clean, full-page HTML report.
 
-Overview
+## Overview
+
 This tool performs WHOIS lookups on a list of domains or URLs provided in a text file, and generates a well-formatted HTML file with the results. Designed for clarity and functionality, the output includes essential WHOIS data in a scrollable table for easy viewing, even with large datasets.
 
-Features
-Bulk WHOIS Lookup: Process a list of domains/URLs with a single command.
-Full-Page HTML Report: Generates a scrollable, responsive HTML table with WHOIS data.
-Data Integrity: Includes a SHA-256 hash of the WHOIS results at the top of the report.
-Comprehensive WHOIS Data: Retrieves additional fields like country, state, city, registrant, and email when available.
-Installation
+## Features
+
+- **Bulk WHOIS Lookup**: Process a list of domains/URLs with a single command.
+- **Full-Page HTML Report**: Generates a scrollable, responsive HTML table with WHOIS data.
+- **Data Integrity**: Includes a SHA-256 hash of the WHOIS results at the top of the report.
+- **Comprehensive WHOIS Data**: Retrieves additional fields like country, state, city, registrant, and email when available.
+
+---
+
+## Installation
+
 Clone this repository and install the required dependencies.
 
-bash
-Copy code
+```bash
 git clone https://github.com/yourusername/whois-lookup-tool.git
 cd whois-lookup-tool
 pip install -r requirements.txt
+
 Dependencies:
 
 python-whois
@@ -61,9 +68,3 @@ This project is licensed under the MIT License.
 
 Contributing
 Contributions are welcome. Open an issue, submit a pull request, or reach out with feedback.
-
-
-
-
-
-
