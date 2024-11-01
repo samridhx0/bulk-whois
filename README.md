@@ -1,6 +1,6 @@
 # WHOIS Lookup Tool
 
-A Python tool for bulk WHOIS lookups, with output formatted in a clean, full-page HTML report.
+A C# tool for bulk WHOIS lookups, with output formatted in a clean, full-page HTML report.
 
 ## Overview
 
@@ -22,49 +22,55 @@ Clone this repository and install the required dependencies.
 ```bash
 git clone https://github.com/yourusername/whois-lookup-tool.git
 cd whois-lookup-tool
-pip install -r requirements.txt
+```
 
 Dependencies:
 
-python-whois
-pandas
-Or install directly:
+This C# script relies on the .NET Framework (version 4.7.2 or above) and `System.Net` for WHOIS queries. If you need to handle WHOIS parsing for specific domains, additional parsing logic may be required.
 
-bash
-Copy code
-pip install python-whois pandas
-Usage
-Prepare a text file with a list of domains or URLs, one per line. Example:
+---
 
-arduino
-Copy code
-https://example.com
-openai.com
-https://github.com
-Run the script:
+## Usage
 
-bash
-Copy code
-python whois_bulk_lookup.py
-When prompted, enter the path to your text file (e.g., domains.txt):
+1. Prepare a text file with a list of domains or URLs, one per line. Example:
 
-plaintext
-Copy code
-Enter the path to the file containing the list of domains/URLs: domains.txt
-The tool will output an HTML file named whois_results.html, containing a full-page layout with WHOIS results.
+   ```
+   https://example.com
+   openai.com
+   https://github.com
+   ```
 
-Sample Output
+2. Run the C# program. This can be done from the command line or in Visual Studio.
+
+   ```bash
+   dotnet run
+   ```
+
+3. When prompted, enter the path to your text file (e.g., `domains.txt`):
+
+   ```plaintext
+   Enter the path to the file containing the list of domains/URLs: domains.txt
+   ```
+
+4. The tool will output an HTML file named `whois_results.html`, containing a full-page layout with WHOIS results.
+
+### Sample Output
+
 The HTML report includes:
 
-Domain Details: Registrar, creation date, expiration date, last updated, status, and name servers.
-Registrant Information: Country, state, city, registrant, and emails (when available).
-SHA-256 Hash: A hash at the top for result verification.
-Example
-Here’s a preview of the output:
+- **Domain Details**: Registrar, creation date, expiration date, last updated, status, and name servers.
+- **Registrant Information**: Country, state, city, registrant, and emails (when available).
+- **SHA-256 Hash**: A hash at the top for result verification.
+
+---
 
 
-License
+## License
+
 This project is licensed under the MIT License.
 
-Contributing
+---
+
+## Contributing
+
 Contributions are welcome. Open an issue, submit a pull request, or reach out with feedback.
