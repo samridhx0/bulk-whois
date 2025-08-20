@@ -23,7 +23,7 @@ This tool performs WHOIS lookups on a list of domains or URLs provided in a text
 Clone this repository and install the required dependencies.
 
 ```bash
-git clone https://github.com/yourusername/whois-lookup-tool.git
+git clone https://github.com/samridhx0/whois-lookup-tool.git
 cd whois-lookup-tool
 pip install -r requirements.txt
 ```
