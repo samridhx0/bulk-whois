@@ -1,5 +1,8 @@
 # WHOIS Lookup Tool
 
+![TURNTOGIF (1)](https://github.com/user-attachments/assets/373adba8-d6a7-4684-a0a3-a46c155d96b8)
+
+
 A Python tool for bulk WHOIS lookups, with output formatted in a clean, full-page HTML report.
 
 ## Overview
