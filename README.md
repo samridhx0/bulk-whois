@@ -74,12 +74,6 @@ The HTML report includes:
 - **SHA-256 Hash**: A hash at the top for result verification.
 
 
-## License
-
-This project is licensed under the MIT License.
-
----
-
 ## Contributing
 
 Contributions are welcome. Open an issue, submit a pull request, or reach out with feedback.
